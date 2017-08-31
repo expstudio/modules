@@ -20,18 +20,24 @@ Begin by installing the package through Composer.
 composer require expstudio/modules
 ```
 
-Once this operation is complete, simply add both the service provider and facade classes to your project's `config/app.php` file:
+Once this operation is complete, simply add both the service provider and facade classes to your project's `bootstrap/app.php` file:
 
 #### Service Provider
 
 ```php
-Expstudio\Modules\ModulesServiceProvider::class,
+$app->register(Expstudio\Modules\ModulesServiceProvider::class);
 ```
 
 #### Facade
 
 ```php
-'Module' => Expstudio\Modules\Facades\Module::class,
+
+$app->withFacades(true, [Expstudio\Modules\Facades\Module::class => 'Module']);
 ```
 
 And that's it! With your coffee in reach, start building out some awesome modules!
+
+#### Add Module 
+```php
+$app->register(App\Modules\[ModuleName]\Providers\ModuleServiceProvider::class);
+```
