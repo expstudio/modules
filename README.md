@@ -1,4 +1,4 @@
-Clone from Expstudio Modules
+Clone from Caffeinated Modules
 ===================
 
 # Expstudio Modules
@@ -11,7 +11,7 @@ Expstudio Modules is a simple package to allow the means to separate your Lumen 
 The package follows the FIG standards PSR-1, PSR-2, and PSR-4 to ensure a high level of interoperability between shared PHP code.
 
 ## Documentation
-You will find user friendly and updated documentation in the wiki here: [Expstudio Modules Wiki](https://github.com/expstudio/modules/wiki)
+You will find user friendly and updated documentation in the wiki here: [Caffeinated Modules Wiki](https://github.com/caffeinated/modules/wiki)
 
 ## Quick Installation
 Begin by installing the package through Composer.
