@@ -1,6 +1,6 @@
 <?php
 
-namespace Caffeinated\Modules\Support;
+namespace Expstudio\Modules\Support;
 
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 

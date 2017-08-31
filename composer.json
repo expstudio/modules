@@ -1,12 +1,12 @@
 {
-    "name": "caffeinated/modules",
-    "description": "Laravel 5.x Modules",
-    "keywords": ["modules", "laravel", "caffeinated"],
+    "name": "expstudio/modules",
+    "description": "Lumen 5.4 Modules",
+    "keywords": ["modules", "lumen", "expstudio", "expstudio"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Shea Lewis",
-            "email": "shea.lewis89@gmail.com"
+            "name": "Watee Wichiennit",
+            "email": "waycs16@gmail.com"
         }
     ],
     "require": {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Caffeinated\\Modules\\": "src/"
+            "Expstudio\\Modules\\": "src/"
         }
     },
     "suggest": {

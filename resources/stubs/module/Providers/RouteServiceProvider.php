@@ -2,10 +2,9 @@
 
 namespace DummyNamespace\Providers;
 
-use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
 
-class RouteServiceProvider extends ServiceProvider
+class RouteServiceProvider
 {
     /**
      * This namespace is applied to your controller routes.
@@ -23,9 +22,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
-
-        parent::boot();
+        $this->map();
     }
 
     /**
@@ -51,10 +48,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapWebRoutes()
     {
-        Route::group([
-            'middleware' => 'web',
-            'namespace'  => $this->namespace,
-        ], function ($router) {
+        global $app;
+
+        $app->group(['namespace'  => $this->namespace], function ($router) {
             require module_path('DummySlug', 'Routes/web.php');
         });
     }
@@ -68,11 +64,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
-        Route::group([
-            'middleware' => 'api',
-            'namespace'  => $this->namespace,
-            'prefix'     => 'api',
-        ], function ($router) {
+        global $app;
+
+        $app->group(['namespace' => $this->namespace, 'prefix' => 'api'], function ($router) {
             require module_path('DummySlug', 'Routes/api.php');
         });
     }

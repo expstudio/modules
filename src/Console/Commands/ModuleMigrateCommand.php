@@ -1,8 +1,8 @@
 <?php
 
-namespace Caffeinated\Modules\Console\Commands;
+namespace Expstudio\Modules\Console\Commands;
 
-use Caffeinated\Modules\Modules;
+use Expstudio\Modules\Modules;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Database\Migrations\Migrator;

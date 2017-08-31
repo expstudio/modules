@@ -1,21 +1,21 @@
 <?php
 
-namespace Caffeinated\Modules\Middleware;
+namespace Expstudio\Modules\Middleware;
 
-use Caffeinated\Modules\Modules;
+use Expstudio\Modules\Modules;
 use Closure;
 
 class IdentifyModule
 {
     /**
-     * @var Caffeinated\Modules
+     * @var Expstudio\Modules
      */
     protected $module;
 
     /**
      * Create a new IdentifyModule instance.
      *
-     * @param Caffeinated\Modules $module
+     * @param Expstudio\Modules $module
      */
     public function __construct(Modules $module)
     {

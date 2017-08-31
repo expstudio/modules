@@ -1,6 +1,6 @@
 <?php
 
-namespace Caffeinated\Modules\Providers;
+namespace Expstudio\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -24,9 +24,9 @@ class RepositoryServiceProvider extends ServiceProvider
         if ($driver == 'Custom') {
             $namespace = config('modules.custom_driver');
         } else {
-            $namespace = 'Caffeinated\Modules\Repositories\\'.$driver.'Repository';
+            $namespace = 'Expstudio\Modules\Repositories\\'.$driver.'Repository';
         }
 
-        $this->app->bind('Caffeinated\Modules\Contracts\Repository', $namespace);
+        $this->app->bind('Expstudio\Modules\Contracts\Repository', $namespace);
     }
 }

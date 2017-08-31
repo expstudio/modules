@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'path' => app_path('Modules'),
+    'path' => app()->basePath() . '/app/Modules',
 
     /*
     |--------------------------------------------------------------------------
@@ -67,8 +67,13 @@ return [
     */
 
     'pathMap' => [
-        // To change where migrations go, specify the default
-        // location as the key and the new location as the value:
-        // 'Database/Migrations' => 'src/Database/Migrations',
+        'Database'          => 'Database',
+        'Http'              => 'Http',
+        'Providers'         => 'Providers',
+        'Models'            => 'Models',
+        'Policies'          => 'Policies',
+        'Resources/Views'   => 'resources/views',
+        'Resources/Lang'    => 'resources/lang',
+        'Routes'            => 'routes',
     ],
 ];

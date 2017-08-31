@@ -1,13 +1,13 @@
 <?php
 
-namespace Caffeinated\Modules;
+namespace Expstudio\Modules;
 
-use Caffeinated\Modules\Contracts\Repository;
-use Caffeinated\Modules\Providers\BladeServiceProvider;
-use Caffeinated\Modules\Providers\ConsoleServiceProvider;
-use Caffeinated\Modules\Providers\GeneratorServiceProvider;
-use Caffeinated\Modules\Providers\HelperServiceProvider;
-use Caffeinated\Modules\Providers\RepositoryServiceProvider;
+use Expstudio\Modules\Contracts\Repository;
+use Expstudio\Modules\Providers\BladeServiceProvider;
+use Expstudio\Modules\Providers\ConsoleServiceProvider;
+use Expstudio\Modules\Providers\GeneratorServiceProvider;
+use Expstudio\Modules\Providers\HelperServiceProvider;
+use Expstudio\Modules\Providers\RepositoryServiceProvider;
 use Illuminate\Support\ServiceProvider;
 
 class ModulesServiceProvider extends ServiceProvider
@@ -22,10 +22,15 @@ class ModulesServiceProvider extends ServiceProvider
      *
      * @return void
      */
+    private function config_path($path = '')
+    {
+        return app()->basePath() . '/config' . ($path ? '/' . $path : $path);
+    }
+
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/modules.php' => config_path('modules.php'),
+            __DIR__.'/../config/modules.php' => $this->config_path('modules.php'),
         ], 'config');
 
         $this->app['modules']->register();

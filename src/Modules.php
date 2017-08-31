@@ -1,10 +1,10 @@
 <?php
 
-namespace Caffeinated\Modules;
+namespace Expstudio\Modules;
 
-use Caffeinated\Modules\Contracts\Repository;
-use Caffeinated\Modules\Exceptions\ModuleNotFoundException;
-use Illuminate\Foundation\Application;
+use Expstudio\Modules\Contracts\Repository;
+use Expstudio\Modules\Exceptions\ModuleNotFoundException;
+use Laravel\Lumen\Application;
 
 class Modules
 {

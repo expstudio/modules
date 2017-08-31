@@ -1,6 +1,6 @@
 <?php
 
-namespace Caffeinated\Modules\Traits;
+namespace Expstudio\Modules\Traits;
 
 trait MigrationTrait
 {

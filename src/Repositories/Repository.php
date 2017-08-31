@@ -1,9 +1,9 @@
 <?php
 
-namespace Caffeinated\Modules\Repositories;
+namespace Expstudio\Modules\Repositories;
 
 use Exception;
-use Caffeinated\Modules\Contracts\Repository as RepositoryContract;
+use Expstudio\Modules\Contracts\Repository as RepositoryContract;
 use Illuminate\Config\Repository as Config;
 use Illuminate\Filesystem\Filesystem;
 
@@ -89,7 +89,7 @@ abstract class Repository implements RepositoryContract
      */
     public function getPath()
     {
-        return $this->path ?: $this->config->get('modules.path');
+        return $this->path ?: config('modules.path');
     }
 
     /**
@@ -116,8 +116,7 @@ abstract class Repository implements RepositoryContract
     public function getModulePath($slug)
     {
         $module = studly_case(str_slug($slug));
-
-        if (\File::exists($this->getPath()."/{$module}/")) {
+        if (file_exists($this->getPath()."/{$module}/")) {
             return $this->getPath()."/{$module}/";
         }
 
@@ -143,6 +142,6 @@ abstract class Repository implements RepositoryContract
      */
     public function getNamespace()
     {
-        return rtrim($this->config->get('modules.namespace'), '/\\');
+        return rtrim(config('modules.namespace'), '/\\');
     }
 }

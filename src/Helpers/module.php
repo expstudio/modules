@@ -1,6 +1,6 @@
 <?php
 
-use Caffeinated\Modules\Exceptions\ModuleNotFoundException;
+use Expstudio\Modules\Exceptions\ModuleNotFoundException;
 
 if (!function_exists('module_path')) {
 	/**
@@ -10,7 +10,7 @@ if (!function_exists('module_path')) {
 	 * @param string $file
 	 *
 	 * @return string
-	 * @throws \Caffeinated\Modules\Exceptions\ModuleNotFoundException
+	 * @throws \Expstudio\Modules\Exceptions\ModuleNotFoundException
 	 */
     function module_path($slug = null, $file = '')
     {
@@ -53,7 +53,7 @@ if (!function_exists('module_class')) {
 	 * @param string $class
 	 *
 	 * @return string
-	 * @throws \Caffeinated\Modules\Exceptions\ModuleNotFoundException
+	 * @throws \Expstudio\Modules\Exceptions\ModuleNotFoundException
 	 */
     function module_class($slug, $class)
     {
