@@ -17,7 +17,7 @@ You will find user friendly and updated documentation in the wiki here: [Caffein
 Begin by installing the package through Composer.
 
 ```
-composer require expstudio/modules
+composer require expstudio/lumen-modules
 ```
 
 Once this operation is complete, simply add both the service provider and facade classes to your project's `bootstrap/app.php` file:
