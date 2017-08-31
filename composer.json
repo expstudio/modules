@@ -1,5 +1,5 @@
 {
-    "name": "expstudio/modules",
+    "name": "expstudio/lumen-modules",
     "description": "Lumen 5.4 Modules",
     "keywords": ["modules", "lumen", "expstudio", "expstudio"],
     "license": "MIT",
