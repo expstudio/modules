@@ -10,9 +10,8 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+global $app;
 
-Route::group(['prefix' => 'DummySlug'], function () {
-    Route::get('/', function () {
-        dd('This is the DummyName module index page. Build something great!');
-    });
+$app->get('/DummySlug', function () {
+    dd('This is the DummyName module index page. Build something great!');exit;
 });
