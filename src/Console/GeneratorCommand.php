@@ -1,6 +1,6 @@
 <?php
 
-namespace Expstudio\Modules\Console;
+namespace Jasahub\Modules\Console;
 
 use Illuminate\Console\GeneratorCommand as LaravelGeneratorCommand;
 use Illuminate\Support\Str;
