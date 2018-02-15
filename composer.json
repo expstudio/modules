@@ -1,21 +1,21 @@
 {
-    "name": "expstudio/lumen-modules",
-    "description": "Lumen 5.4 Modules",
-    "keywords": ["modules", "lumen", "expstudio", "expstudio"],
+    "name": "faisalrizal/lumen-modules",
+    "description": "Lumen 5.6 Modules",
+    "keywords": ["modules", "lumen", "jasahub", "jasahub"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Watee Wichiennit",
-            "email": "waycs16@gmail.com"
+            "name": "Faisal Rizal",
+            "email": "faisalrizal@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.6.4",
-        "illuminate/support": "5.4.*"
+        "php": ">=7.1.3",
+        "illuminate/support": "5.6.*"
     },
     "autoload": {
         "psr-4": {
-            "Expstudio\\Modules\\": "src/"
+            "Jasahub\\Modules\\": "src/"
         }
     },
     "suggest": {
