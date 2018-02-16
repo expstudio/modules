@@ -21,5 +21,13 @@
     },
     "suggest": {
         "wikimedia/composer-merge-plugin": "Allows the ability to create and merge composer.json files for your individual modules for module-specific dependency management."
+    },
+    "config": {
+        "platform": {
+            "php": "7.1.3"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
     }
 }
