@@ -1,9 +1,9 @@
 <?php
 
-namespace Expstudio\Modules\Repositories;
+namespace Jasahub\Modules\Repositories;
 
 use Exception;
-use Expstudio\Modules\Contracts\Repository as RepositoryContract;
+use Jasahub\Modules\Contracts\Repository as RepositoryContract;
 use Illuminate\Config\Repository as Config;
 use Illuminate\Filesystem\Filesystem;
 

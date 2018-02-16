@@ -1,8 +1,8 @@
 <?php
 
-namespace Expstudio\Modules\Providers;
+namespace Jasahub\Modules\Providers;
 
-use Expstudio\Modules\Database\Migrations\Migrator;
+use Jasahub\Modules\Database\Migrations\Migrator;
 use Illuminate\Support\ServiceProvider;
 
 class ConsoleServiceProvider extends ServiceProvider
@@ -37,7 +37,7 @@ class ConsoleServiceProvider extends ServiceProvider
     protected function registerDisableCommand()
     {
         $this->app->singleton('command.module.disable', function () {
-            return new \Expstudio\Modules\Console\Commands\ModuleDisableCommand();
+            return new \Jasahub\Modules\Console\Commands\ModuleDisableCommand();
         });
 
         $this->commands('command.module.disable');
@@ -49,7 +49,7 @@ class ConsoleServiceProvider extends ServiceProvider
     protected function registerEnableCommand()
     {
         $this->app->singleton('command.module.enable', function () {
-            return new \Expstudio\Modules\Console\Commands\ModuleEnableCommand();
+            return new \Jasahub\Modules\Console\Commands\ModuleEnableCommand();
         });
 
         $this->commands('command.module.enable');
@@ -61,7 +61,7 @@ class ConsoleServiceProvider extends ServiceProvider
     protected function registerListCommand()
     {
         $this->app->singleton('command.module.list', function ($app) {
-            return new \Expstudio\Modules\Console\Commands\ModuleListCommand($app['modules']);
+            return new \Jasahub\Modules\Console\Commands\ModuleListCommand($app['modules']);
         });
 
         $this->commands('command.module.list');
@@ -73,7 +73,7 @@ class ConsoleServiceProvider extends ServiceProvider
     protected function registerMigrateCommand()
     {
         $this->app->singleton('command.module.migrate', function ($app) {
-            return new \Expstudio\Modules\Console\Commands\ModuleMigrateCommand($app['migrator'], $app['modules']);
+            return new \Jasahub\Modules\Console\Commands\ModuleMigrateCommand($app['migrator'], $app['modules']);
         });
 
         $this->commands('command.module.migrate');
@@ -85,7 +85,7 @@ class ConsoleServiceProvider extends ServiceProvider
     protected function registerMigrateRefreshCommand()
     {
         $this->app->singleton('command.module.migrate.refresh', function () {
-            return new \Expstudio\Modules\Console\Commands\ModuleMigrateRefreshCommand();
+            return new \Jasahub\Modules\Console\Commands\ModuleMigrateRefreshCommand();
         });
 
         $this->commands('command.module.migrate.refresh');
@@ -97,7 +97,7 @@ class ConsoleServiceProvider extends ServiceProvider
     protected function registerMigrateResetCommand()
     {
         $this->app->singleton('command.module.migrate.reset', function ($app) {
-            return new \Expstudio\Modules\Console\Commands\ModuleMigrateResetCommand($app['modules'], $app['files'], $app['migrator']);
+            return new \Jasahub\Modules\Console\Commands\ModuleMigrateResetCommand($app['modules'], $app['files'], $app['migrator']);
         });
 
         $this->commands('command.module.migrate.reset');
@@ -114,7 +114,7 @@ class ConsoleServiceProvider extends ServiceProvider
 
             $migrator = new Migrator($table, $repository, $app['db'], $app['files']);
 
-            return new \Expstudio\Modules\Console\Commands\ModuleMigrateRollbackCommand($migrator, $app['modules']);
+            return new \Jasahub\Modules\Console\Commands\ModuleMigrateRollbackCommand($migrator, $app['modules']);
         });
 
         $this->commands('command.module.migrate.rollback');
@@ -126,7 +126,7 @@ class ConsoleServiceProvider extends ServiceProvider
     protected function registerOptimizeCommand()
     {
         $this->app->singleton('command.module.optimize', function () {
-            return new \Expstudio\Modules\Console\Commands\ModuleOptimizeCommand();
+            return new \Jasahub\Modules\Console\Commands\ModuleOptimizeCommand();
         });
 
         $this->commands('command.module.optimize');
@@ -138,7 +138,7 @@ class ConsoleServiceProvider extends ServiceProvider
     protected function registerSeedCommand()
     {
         $this->app->singleton('command.module.seed', function ($app) {
-            return new \Expstudio\Modules\Console\Commands\ModuleSeedCommand($app['modules']);
+            return new \Jasahub\Modules\Console\Commands\ModuleSeedCommand($app['modules']);
         });
 
         $this->commands('command.module.seed');

@@ -1,6 +1,6 @@
 <?php
 
-namespace Expstudio\Modules\Providers;
+namespace Jasahub\Modules\Providers;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\ServiceProvider;

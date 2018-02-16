@@ -1,6 +1,6 @@
 <?php
 
-namespace Expstudio\Modules\Console\Generators;
+namespace Jasahub\Modules\Console\Generators;
 
 use Illuminate\Console\Command;
 

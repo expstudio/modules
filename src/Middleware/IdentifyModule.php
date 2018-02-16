@@ -1,21 +1,21 @@
 <?php
 
-namespace Expstudio\Modules\Middleware;
+namespace Jasahub\Modules\Middleware;
 
-use Expstudio\Modules\Modules;
+use Jasahub\Modules\Modules;
 use Closure;
 
 class IdentifyModule
 {
     /**
-     * @var Expstudio\Modules
+     * @var Jasahub\Modules
      */
     protected $module;
 
     /**
      * Create a new IdentifyModule instance.
      *
-     * @param Expstudio\Modules $module
+     * @param Jasahub\Modules $module
      */
     public function __construct(Modules $module)
     {

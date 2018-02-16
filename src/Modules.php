@@ -1,9 +1,9 @@
 <?php
 
-namespace Expstudio\Modules;
+namespace Jasahub\Modules;
 
-use Expstudio\Modules\Contracts\Repository;
-use Expstudio\Modules\Exceptions\ModuleNotFoundException;
+use Jasahub\Modules\Contracts\Repository;
+use Jasahub\Modules\Exceptions\ModuleNotFoundException;
 use Laravel\Lumen\Application;
 
 class Modules

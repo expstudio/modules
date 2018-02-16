@@ -1,8 +1,8 @@
 <?php
 
-namespace Expstudio\Modules\Console\Commands;
+namespace Jasahub\Modules\Console\Commands;
 
-use Expstudio\Modules\Modules;
+use Jasahub\Modules\Modules;
 use Illuminate\Console\Command;
 
 class ModuleListCommand extends Command

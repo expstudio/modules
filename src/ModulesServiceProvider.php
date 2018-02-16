@@ -1,13 +1,13 @@
 <?php
 
-namespace Expstudio\Modules;
+namespace Jasahub\Modules;
 
-use Expstudio\Modules\Contracts\Repository;
-use Expstudio\Modules\Providers\BladeServiceProvider;
-use Expstudio\Modules\Providers\ConsoleServiceProvider;
-use Expstudio\Modules\Providers\GeneratorServiceProvider;
-use Expstudio\Modules\Providers\HelperServiceProvider;
-use Expstudio\Modules\Providers\RepositoryServiceProvider;
+use Jasahub\Modules\Contracts\Repository;
+use Jasahub\Modules\Providers\BladeServiceProvider;
+use Jasahub\Modules\Providers\ConsoleServiceProvider;
+use Jasahub\Modules\Providers\GeneratorServiceProvider;
+use Jasahub\Modules\Providers\HelperServiceProvider;
+use Jasahub\Modules\Providers\RepositoryServiceProvider;
 use Illuminate\Support\ServiceProvider;
 
 class ModulesServiceProvider extends ServiceProvider

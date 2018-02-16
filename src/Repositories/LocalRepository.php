@@ -1,6 +1,6 @@
 <?php
 
-namespace Expstudio\Modules\Repositories;
+namespace Jasahub\Modules\Repositories;
 
 class LocalRepository extends Repository
 {

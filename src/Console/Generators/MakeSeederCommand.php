@@ -1,8 +1,8 @@
 <?php
 
-namespace Expstudio\Modules\Console\Generators;
+namespace Jasahub\Modules\Console\Generators;
 
-use Expstudio\Modules\Console\GeneratorCommand;
+use Jasahub\Modules\Console\GeneratorCommand;
 
 class MakeSeederCommand extends GeneratorCommand
 {

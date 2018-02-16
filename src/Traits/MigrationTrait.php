@@ -1,6 +1,6 @@
 <?php
 
-namespace Expstudio\Modules\Traits;
+namespace Jasahub\Modules\Traits;
 
 trait MigrationTrait
 {

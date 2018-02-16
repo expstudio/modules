@@ -1,6 +1,6 @@
 <?php
 
-namespace Expstudio\Modules\Providers;
+namespace Jasahub\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -20,16 +20,16 @@ class GeneratorServiceProvider extends ServiceProvider
     public function register()
     {
         $generators = [
-            'command.make.module'            => \Expstudio\Modules\Console\Generators\MakeModuleCommand::class,
-            'command.make.module.controller' => \Expstudio\Modules\Console\Generators\MakeControllerCommand::class,
-            'command.make.module.middleware' => \Expstudio\Modules\Console\Generators\MakeMiddlewareCommand::class,
-            'command.make.module.migration'  => \Expstudio\Modules\Console\Generators\MakeMigrationCommand::class,
-            'command.make.module.model'      => \Expstudio\Modules\Console\Generators\MakeModelCommand::class,
-            'command.make.module.policy'     => \Expstudio\Modules\Console\Generators\MakePolicyCommand::class,
-            'command.make.module.provider'   => \Expstudio\Modules\Console\Generators\MakeProviderCommand::class,
-            'command.make.module.request'    => \Expstudio\Modules\Console\Generators\MakeRequestCommand::class,
-            'command.make.module.seeder'     => \Expstudio\Modules\Console\Generators\MakeSeederCommand::class,
-            'command.make.module.test'       => \Expstudio\Modules\Console\Generators\MakeTestCommand::class,
+            'command.make.module'            => \Jasahub\Modules\Console\Generators\MakeModuleCommand::class,
+            'command.make.module.controller' => \Jasahub\Modules\Console\Generators\MakeControllerCommand::class,
+            'command.make.module.middleware' => \Jasahub\Modules\Console\Generators\MakeMiddlewareCommand::class,
+            'command.make.module.migration'  => \Jasahub\Modules\Console\Generators\MakeMigrationCommand::class,
+            'command.make.module.model'      => \Jasahub\Modules\Console\Generators\MakeModelCommand::class,
+            'command.make.module.policy'     => \Jasahub\Modules\Console\Generators\MakePolicyCommand::class,
+            'command.make.module.provider'   => \Jasahub\Modules\Console\Generators\MakeProviderCommand::class,
+            'command.make.module.request'    => \Jasahub\Modules\Console\Generators\MakeRequestCommand::class,
+            'command.make.module.seeder'     => \Jasahub\Modules\Console\Generators\MakeSeederCommand::class,
+            'command.make.module.test'       => \Jasahub\Modules\Console\Generators\MakeTestCommand::class,
         ];
 
         foreach ($generators as $slug => $class) {

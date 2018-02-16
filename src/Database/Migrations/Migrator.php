@@ -1,6 +1,6 @@
 <?php
 
-namespace Expstudio\Modules\Database\Migrations;
+namespace Jasahub\Modules\Database\Migrations;
 
 use Illuminate\Database\ConnectionResolverInterface as Resolver;
 use Illuminate\Database\Migrations\MigrationRepositoryInterface;

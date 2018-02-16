@@ -5,7 +5,7 @@
  * Time: 5:27 PM
  */
 
-namespace Expstudio\Modules\Exceptions;
+namespace Jasahub\Modules\Exceptions;
 
 
 class ModuleNotFoundException extends \Exception {

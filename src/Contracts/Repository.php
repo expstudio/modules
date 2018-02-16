@@ -1,6 +1,6 @@
 <?php
 
-namespace Expstudio\Modules\Contracts;
+namespace Jasahub\Modules\Contracts;
 
 interface Repository
 {

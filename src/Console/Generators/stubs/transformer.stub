@@ -1,0 +1,13 @@
+<?php
+
+namespace DummyNamespace;
+
+use League\Fractal\TransformerAbstract;
+
+class ModelTransformer extends TransformerAbstract
+{
+    public function transform(Transformable $model)
+    {
+        return $model->transform();
+    }
+}

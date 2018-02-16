@@ -1,6 +1,6 @@
 <?php
 
-namespace Expstudio\Modules\Facades;
+namespace Jasahub\Modules\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

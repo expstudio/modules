@@ -1,6 +1,6 @@
 <?php
 
-namespace Expstudio\Modules\Providers;
+namespace Jasahub\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -24,9 +24,9 @@ class RepositoryServiceProvider extends ServiceProvider
         if ($driver == 'Custom') {
             $namespace = config('modules.custom_driver');
         } else {
-            $namespace = 'Expstudio\Modules\Repositories\\'.$driver.'Repository';
+            $namespace = 'Jasahub\Modules\Repositories\\'.$driver.'Repository';
         }
 
-        $this->app->bind('Expstudio\Modules\Contracts\Repository', $namespace);
+        $this->app->bind('Jasahub\Modules\Contracts\Repository', $namespace);
     }
 }

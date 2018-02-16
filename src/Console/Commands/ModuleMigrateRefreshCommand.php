@@ -1,6 +1,6 @@
 <?php
 
-namespace Expstudio\Modules\Console\Commands;
+namespace Jasahub\Modules\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;

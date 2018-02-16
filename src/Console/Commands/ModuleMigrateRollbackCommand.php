@@ -1,9 +1,9 @@
 <?php
 
-namespace Expstudio\Modules\Console\Commands;
+namespace Jasahub\Modules\Console\Commands;
 
-use Expstudio\Modules\Modules;
-use Expstudio\Modules\Traits\MigrationTrait;
+use Jasahub\Modules\Modules;
+use Jasahub\Modules\Traits\MigrationTrait;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Database\Migrations\Migrator;

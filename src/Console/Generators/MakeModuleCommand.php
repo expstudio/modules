@@ -1,8 +1,8 @@
 <?php
 
-namespace Expstudio\Modules\Console\Generators;
+namespace Jasahub\Modules\Console\Generators;
 
-use Expstudio\Modules\Modules;
+use Jasahub\Modules\Modules;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Symfony\Component\Console\Helper\ProgressBar;
@@ -23,7 +23,7 @@ class MakeModuleCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Create a new Expstudio module and bootstrap it';
+    protected $description = 'Create a new Jasahub module and bootstrap it';
 
     /**
      * The modules instance.

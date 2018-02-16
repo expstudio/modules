@@ -1,6 +1,6 @@
 <?php
 
-namespace Expstudio\Modules\Support;
+namespace Jasahub\Modules\Support;
 
 use Illuminate\Support\Facades\Gate as IlluminateGate;
 
